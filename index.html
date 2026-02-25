@@ -46,12 +46,13 @@
         }
         /* --- ΕΔΩ ΠΡΟΣΘΕΤΕΙΣ ΤΟ ZOOM ΓΙΑ ΤΑ ΜΑΡΤΑΚΙΑ --- */
         .product-circle {
-            transition: transform 0.3s ease-in-out, border-color 0.3s ease;
+            transition: transform 0.4s ease-in-out, border-color 0.3s ease;
             cursor: pointer;
+            backface-visibility: hidden; /* Για να παραμένει καθαρή η εικόνα στο zoom */
         }
 
         .product-circle:hover {
-            transform: scale(1.1); /* Μεγαλώνει το κυκλάκι κατά 10% */
+            transform: scale(1.2); /* Μεγαλώνει το κυκλάκι κατά 10% */
             border-color: var(--accent-color) !important; /* Αλλάζει το περίγραμμα σε κεραμιδί */
         }
     </style>
